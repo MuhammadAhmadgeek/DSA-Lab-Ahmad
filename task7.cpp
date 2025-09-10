@@ -23,7 +23,15 @@ int main() {
     int key ;
     cout<<"Enter key to search."<<endl;
     cin>>key;
-
     
+    vector<int> indices =createList( val, key); 
+      cout<<"The indices are:"<<endl;
+       for (int i = 0; i < (int)indices.size(); i++) {
+        cout << indices[i];
+        if (i != (int)indices.size() - 1) cout << ", ";
+    }
+    cout << endl;
+
+
     return 0;
 }
